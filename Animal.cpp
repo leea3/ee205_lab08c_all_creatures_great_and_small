@@ -2,29 +2,15 @@
 ///         University of Hawaii, College of Engineering
 /// @brief  ee205_lab08c_all_creatures_great_and_small - EE 205 - Spr 2022
 ///
-/// @file Animal.h
+/// @file Animal.cpp
 /// @version 1.0
 ///
 /// @author Arthur Lee <leea3@hawaii.edu>
 /// @date   10_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 
-#pragma once
+#include "Animal.h"
 
-#include <string>
+using namespace std;
 
-const int UNKNOWN_WEIGHT = -1;
-
-enum Gender {
-    UNKNOWN_GENDER, MALE, FEMALE
-};
-
-
-class Animal {
-protected:
-    static const std::string kingdom;
-    std::string              species;
-    enum Gender              gender = UNKNOWN_GENDER;
-    float                    weight = UNKNOWN_WEIGHT;
-
-};
+const string Animal::kingdom = "Animalia";
